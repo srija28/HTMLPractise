@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset = "UTF-8">
+       <title>CodePen - Demo Flexbox 3</title> 
+        <style>
+            body{ padding: 2em; }
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: plum;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: lightpink;
+        }
+
+        .sideBarLeftItem{
+            background: gold;
+        }
+        .sideBarRightItem{
+            background: skyblue;
+        }
+        .sideBarItem{
+            flex: 1 0 0;
+            border: 0px solid green;
+        }
+        .mainContentItem{ flex: 3 0px;}
+        .sideBarLeftItem{
+            order: 1;
+        }
+        .mainContentItem{
+            order: 2;
+        }
+        .sideBarRightItem{
+            order: 3;
+        }
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER - Sample Flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>Charles</h2>
+                    <p>Charles Marc Hervé Perceval Leclerc (born 16 October 1997) is a Monégasque racing driver, currently racing in Formula One for Scuderia Ferrari, under the Monégasque flag. 
+                        Leclerc won the GP3 Series championship in 2016 and the FIA Formula 2 Championship in 2017.
+                        Starting from 2019 and contracted until the end of the 2024 season, Leclerc is currently driving for Ferrari. He became the second-youngest driver to qualify on pole position in Formula One at the 2019 Bahrain Grand Prix. 
+                        The 2019 season also saw Leclerc take his first career win in Belgium, followed by winning his first Italian Grand Prix as a Ferrari driver the week after. 
+                        He won the Pole Trophy in the 2019 season becoming the youngest driver ever and the first non-Mercedes driver to win it since the trophy's inception in 2014.</p>
+                </article>    
+                <article>
+                    <h2>Daniel</h2>
+                    <p>Daniel Joseph Ricciardo (born 1 July 1989) is an Italian-Australian racing driver who is currently competing in Formula One, under the Australian flag, for Renault. 
+                        He made his debut at the 2011 British Grand Prix with the HRT team as part of a deal with Red Bull Racing, for whom he was test driving under its sister team Scuderia Toro Rosso. Ricciardo’s driver number is 3.
+                        Ricciardo joined Toro Rosso in 2012 full time after the team changed its driver lineup and drove a Ferrari-powered car for them in 2012 and 2013.
+                         In 2014, Ricciardo was promoted to Red Bull alongside multiple time world champion Sebastian Vettel.
+                          In his first season with Red Bull under Renault power, Ricciardo finished third in the championship with his first three Formula One wins, in Canada, Hungary, and Belgium.</p>
+                </article>
+                <article>
+                    <h2>Max Verstappen</h2>
+                    <p>Max Emilian Verstappen (born 30 September 1997) is a Belgian-Dutch racing driver currently competing in Formula One, under the Dutch flag, with Red Bull Racing. At the 2015 Australian Grand Prix, when he was aged 17 years, 166 days, he became the youngest driver to compete in Formula One. He holds several other "firsts" in Formula One racing.</p>
+                </article>
+            </section>
+            <sideBar class ="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <sideBar class ="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
