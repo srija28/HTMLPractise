@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="shortcut icon" href="..\assets\BL_logo_square_png.png">
+        <title>CodePen - Demo Flexbox 3</title> 
+        <style>
+           * {
+              box-sizing: border-box; 
+             }
+             body {
+              display: flex;
+              min-height: 100vh;
+              flex-direction: row;
+              margin: 0;
+             }
+             .outer-col-1 {
+              background: #D7E8D4;
+              flex: 1;
+             }
+             .outer-col-2 {
+              display: flex;
+              flex-direction: column;
+              flex: 5;
+            }
+            .inner-row {
+              display: flex;
+              flex-direction: row;
+           }
+           .inner-col {
+            flex: 4;
+           }
+           .inner-row article {
+           min-height: 60vh;
+           }
+            .inner-row aside {
+           background: beige;
+           flex: 1;
+          }
+          header{
+            text-align: center;
+          }
+          header, footer {
+           background: yellowgreen;
+           height: 20vh;
+          }
+           header, footer, article, nav, aside {
+          padding: 1em;
+          }
+        </style>
+    </head>
+    <body>
+        <nav class="outer-col-1"><p>Navigation</p>
+            <p><a href ="https://www.google.co.in/">google</a></p>
+        </nav>
+        <div class="outer-col-2">
+            <header><h1>Formula1: Drive to Survive </h1></header>
+          <div class="inner-row">
+            <div class="inner-col">
+              <article><h2>Formula1 Drivers </h2>
+               <p>Formula One, abbreviated to F1, is the highest class of open-wheeled auto racing defined by the Fédération Internationale de l'Automobile (FIA), motorsport's world governing body.The "formula" in the name refers to a set of rules to which all participants and cars must conform. Each year, the F1 World Championship is held. It consists of a series of races, known as Grands Prix, held usually on purpose-built circuits, and in a few cases on closed city streets.</p>
+               <p>Drivers are awarded points based on their finishing position in each race, and the driver who accumulates the most points over each championship is crowned that year's World Drivers' Champion. As of the 2020 Turkish Grand Prix, there have been 775 Formula One drivers from 39 different nationalities who have raced at least one of the 1,031 FIA World Championship races since the first such event, the 1950 British Grand Prix. </p>
+            </article>
+                <footer>Footer</footer>
+            </div>
+              <aside><h3>Highest World Title Winners</h3>
+                <p>Michael Schumacher</p>
+                <p>Lewis Hamilton</p>
+                <p>Sebastian Vettel</p>
+              </aside>
+          </div>
+        </div>
+    </body>
+</html>
