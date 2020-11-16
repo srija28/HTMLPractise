@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="shortcut icon" href="..\assests\BL_logo_square_jpg.jpg">
+        <title>CodePen - Demo Flexbox 3</title> 
+        <style>
+            .cards {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: stretch;
+            }
+            .card {
+              flex: 0 0 200px;
+              margin: 10px;
+              border: 1px solid #ccc;
+              box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+            } 
+            .card img {
+              max-width: 100%;
+            
+               height: 267px;
+}
+            }
+            .card .text {
+              padding: 0 20px 20px;
+            }
+            .card .text > button {
+              background: gray;
+              border: 0;
+              color: white;
+              padding: 10px;
+              width: 100%;
+              }
+          </style>
+    </head>
+    <body>
+        <main class="cards">
+            <article class="card">
+              <img src="..\assests\mer.jpg" alt="Sample photo">
+              <div class="text">
+                <h3>Mercedes</h3>
+                <p>Driver : Lewis Hamilton</p>
+                <button>Watch the Race Now</button>
+              </div>
+            </article>
+            <article class="card">
+              <img src="..\assests\red.jpg" alt="Sample photo">
+              <div class="text">
+                <h3>Ferrari</h3>
+                <p>Driver : Charles Leclerc</p>
+                <button>Watch the Race Now</button>
+              </div>
+            </article>
+            <article class="card">
+              <img src="..\assests\renault.jpg" alt="Sample photo">
+              <div class="text">
+                <h3>Renault</h3>
+                <p>Driver : Daniel Riccardio</p>
+                <button>Watch the Race Now</button>
+              </div>
+            </article>
+            <article class="card">
+              <img src="..\assests\red.jpg" alt="Sample photo">
+              <div class="text">
+                <h3>Red Bull</h3>
+                <p>Driver : Max Verstappen</p>
+                <button>Watch the Race Now</button>
+              </div>
+            </article>
+          </main>
+    </body>
+</html>
